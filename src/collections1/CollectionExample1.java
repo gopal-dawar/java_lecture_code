@@ -5,12 +5,15 @@ import java.util.List;
 
 public class CollectionExample1 {
 	public static void main(String[] args) {
-		List<String> list = new ArrayList();
-		
-		list.add("gopal");
-		list.add("Ajay");
-		list.add("nakul");
-		
-		System.out.println(list.toString());
+		List<Integer> evenNumber = new ArrayList<Integer>();
+		for (int i = 1; i <= 20; i++) {
+			if (i % 2 == 0) {
+				evenNumber.add(i);
+			}
+		}
+
+		for (int n : evenNumber) {
+			System.out.print(n + " ");
+		}
 	}
 }
